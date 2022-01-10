@@ -1,8 +1,8 @@
 import "./index.css"
 
-const Button = ( {texte} ) => {
+const Button = ( {texte, ...rest } ) => {
     return ( 
-        <button>
+        <button {...rest} className="button">
             { texte }
         </button>
      );
